@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            height: 100vh;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 1;
+        }
+        .sidebar {
+            background-color: #34495e;
+            padding: 20px;
+            width: 250px;
+            position: fixed;
+            top: 50px;
+            bottom: 0;
+            overflow-y: auto;
+        }
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .sidebar a:hover {
+            background-color: #1abc9c;
+        }
+        .content {
+            margin-left: 270px;
+            padding: 20px;
+            margin-top: 70px;
+            flex: 1;
+            overflow-y: auto;
+        }
+        .content h2 {
+            margin-top: 0;
+        }
+        .task-section {
+            margin-bottom: 20px;
+        }
+        .task-section a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .task-section a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Admin Dashboard</h1>
+    </header>
+
+    <div class="sidebar">
+        <h2>Navigation</h2>
+        <a href="#dashboard">Dashboard</a>
+        <a href="manage-students.html">Manage Students</a>
+        <a href="manage-faculty.html">Manage Faculty</a>
+        <a href="manage-courses.html">Manage Courses</a>
+        <a href="manage-exams.html">Manage Exams</a>
+        <a href="settings.html">Settings</a>
+        <a href="index.html">Logout</a>
+    </div>
+
+    <div class="content">
+        <h2 id="dashboard">Dashboard</h2>
+        <div class="task-section">
+            <h3>Manage Students</h3>
+            <p>View, add, edit, or remove student information. <a href="manage-students.html">Go to Manage Students</a></p>
+        </div>
+        <div class="task-section">
+            <h3>Manage Faculty</h3>
+            <p>Manage the faculty members associated with the institute. <a href="manage-faculty.html">Go to Manage Faculty</a></p>
+        </div>
+        <div class="task-section">
+            <h3>Manage Courses</h3>
+            <p>View, add, edit, or remove courses offered by the institute. <a href="manage-courses.html">Go to Manage Courses</a></p>
+        </div>
+        <div class="task-section">
+            <h3>Manage Exams</h3>
+            <p>View, schedule, or manage exam details. <a href="manage-exams.html">Go to Manage Exams</a></p>
+        </div>
+        <div class="task-section">
+            <h3>Settings</h3>
+            <p>Configure the institute's settings and preferences. <a href="settings.html">Go to Settings</a></p>
+        </div>
+    </div>
+</body>
+</html>
