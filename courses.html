@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Enrollment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Course Enrollment</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="admin.html">Admin Panel</a></li>
+                <li><a href="dashboard.html">Student Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="enrollment">
+        <h2>Enroll in a Course</h2>
+        <form id="enrollmentForm">
+            <label for="studentName">Name:</label>
+            <input type="text" id="studentName" name="studentName" required>
+            
+            <label for="courseSelection">Select Course:</label>
+            <select id="courseSelection" name="courseSelection" required>
+                <option value="course1">Course 1</option>
+                <option value="course2">Course 2</option>
+                <option value="course3">Course 3</option>
+            </select>
+            
+            <button type="submit">Enroll Now</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Institute Name. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
